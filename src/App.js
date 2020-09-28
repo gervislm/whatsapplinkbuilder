@@ -1,8 +1,9 @@
 import React from "react";
-import Form from "./components/Form";
+import FormElement from "./components/FormElement";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
-  return <Form />;
+  return <FormElement />;
 };
 
 export default App;
