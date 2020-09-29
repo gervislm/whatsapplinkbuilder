@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Form, Button, Image } from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 const FormElement = () => {
   const [text, setText] = useState("");
@@ -37,8 +37,8 @@ const FormElement = () => {
           <h1 className="title">Whatsapp link builder</h1>
         </Col>
       </Row>
-      <Row>
-        <Col>
+      <Row className="justify-content-center text-center">
+        <Col xs={12} lg={6}>
           <div className="link">{`api.whatsapp.com/send?phone=${number}&text=${text}`}</div>
         </Col>
       </Row>
