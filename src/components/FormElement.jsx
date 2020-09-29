@@ -11,16 +11,26 @@ const FormElement = () => {
     console.log(number);
   };
 
-  const copyLink = () => {
+  const copyLink = (e) => {
     let link = document.querySelector(".link").innerText;
     let linkNew = link.replace(/\++/g, "");
     navigator.clipboard.writeText(linkNew);
+    let button = e.target;
+    button.style.color = "greenyellow";
+    button.innerText = "Copied";
+    setTimeout(() => {
+      button.style.color = "white";
+      button.innerText = "Copy";
+    }, 1000);
   };
+
+  // const animationButton = () => {};
   return (
     <Container>
       <Row className="justify-content-center text-center">
         <Col xs={6}>
           <img src="./logo.png" alt="" className="img-fluid" />
+          <h1 className="title">Whatsapp link builder</h1>
         </Col>
       </Row>
       <Row>
@@ -57,6 +67,7 @@ const FormElement = () => {
               size="lg"
               block
               onClick={copyLink}
+              className="animate__lightSpeedOutLeft"
             >
               Copy
             </Button>
