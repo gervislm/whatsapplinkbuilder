@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form, Button, Image } from "react-bootstrap";
 
 const FormElement = () => {
   const [text, setText] = useState("");
   const [number, setNumber] = useState("");
-  // const [link, setLink] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,7 +34,6 @@ const FormElement = () => {
     <Container Fluid>
       <Row className="justify-content-center text-center">
         <Col xs={12} lg={6}>
-          <img src="./logo.png" alt="" className="img-fluid" />
           <h1 className="title">Whatsapp link builder</h1>
         </Col>
       </Row>
