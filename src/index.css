@@ -18,7 +18,7 @@ body {
     #004e92,
     #000428
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-size: 2em !important;
+  font-size: 1em !important;
   font-family: "Press Start 2P", cursive !important;
   padding: 5%;
 }
@@ -47,4 +47,5 @@ code {
 
 .title {
   color: #ffffff;
+  font-size: 2em;
 }

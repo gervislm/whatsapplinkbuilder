@@ -18,17 +18,23 @@ const FormElement = () => {
     let button = e.target;
     button.style.color = "greenyellow";
     button.innerText = "Copied";
+    const form = button.parentElement;
+    const tip = document.createElement("SPAN");
+    tip.innerText = "*** Whatsapp link is in your CLIPBOAD ***";
+    tip.style.color = "yellow";
+    form.insertBefore(tip, button);
     setTimeout(() => {
       button.style.color = "white";
       button.innerText = "Copy";
+      form.removeChild(tip);
     }, 1000);
   };
 
   // const animationButton = () => {};
   return (
-    <Container>
+    <Container Fluid>
       <Row className="justify-content-center text-center">
-        <Col xs={6}>
+        <Col xs={12} lg={6}>
           <img src="./logo.png" alt="" className="img-fluid" />
           <h1 className="title">Whatsapp link builder</h1>
         </Col>
