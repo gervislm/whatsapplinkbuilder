@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "533c908bbb1761bf58f11982d239788c",
+    "revision": "fdfbf25787c082ca3f82f56840695633",
     "url": "/whatsapplinkbuilder/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/whatsapplinkbuilder/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "c3056f6e509e78e4d480",
-    "url": "/whatsapplinkbuilder/static/css/main.dda232dc.chunk.css"
+    "revision": "3d6f989f27aa0fd2a79d",
+    "url": "/whatsapplinkbuilder/static/css/main.ac682e29.chunk.css"
   },
   {
     "revision": "62b61cad1e5ece6f80fa",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/whatsapplinkbuilder/static/js/2.c2673c5c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c3056f6e509e78e4d480",
-    "url": "/whatsapplinkbuilder/static/js/main.27ce255b.chunk.js"
+    "revision": "3d6f989f27aa0fd2a79d",
+    "url": "/whatsapplinkbuilder/static/js/main.b91bc00f.chunk.js"
   },
   {
     "revision": "fcb89992617c13577795",
