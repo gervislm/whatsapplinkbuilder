@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import logo from "../img/logo.png";
 
 const FormElement = () => {
   const [text, setText] = useState("");
@@ -34,6 +35,7 @@ const FormElement = () => {
     <Container Fluid>
       <Row className="justify-content-center text-center">
         <Col xs={12} lg={6}>
+          <img src={logo} alt="logo" />
           <h1 className="title">Whatsapp link builder</h1>
         </Col>
       </Row>
