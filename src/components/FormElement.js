@@ -50,7 +50,7 @@ const FormElement = () => {
             <Form.Group controlId="formBasicNumber">
               <Form.Label className="textlabel">Whatsapp Number</Form.Label>
               <Form.Control
-                type="text"
+                type="number"
                 pattern="[0-9]*"
                 inputmode="numeric"
                 value={number}
