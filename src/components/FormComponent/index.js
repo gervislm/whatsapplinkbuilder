@@ -1,8 +1,9 @@
+"use client";
 import React, { useState } from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import logo from "../img/logo.png";
+import logo from "@/img/logo.png";
+import Image from "next/image";
 
-const FormElement = () => {
+export const FormComponent = () => {
   const [text, setText] = useState("");
   const [number, setNumber] = useState("");
 
@@ -30,44 +31,43 @@ const FormElement = () => {
     }, 1000);
   };
 
-  // const animationButton = () => {};
   return (
-    <Container Fluid>
-      <Row className="justify-content-center text-center">
-        <Col xs={12} lg={6}>
-          <img src={logo} alt="logo" />
+    <div>
+      <div className="justify-content-center text-center">
+        <div xs={12} lg={6}>
+          <Image src={logo} alt="logo" />
           <h1 className="title">Whatsapp link builder</h1>
-        </Col>
-      </Row>
-      <Row className="justify-content-center text-center">
-        <Col xs={12} lg={6}>
+        </div>
+      </div>
+      <div className="justify-content-center text-center">
+        <div xs={12} lg={6}>
           <div className="link">{`api.whatsapp.com/send?phone=${number}&text=${text}`}</div>
-        </Col>
-      </Row>
-      <Row className="justify-content-center">
-        <Col xs={10}>
-          <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="formBasicNumber">
-              <Form.Label className="textlabel">Whatsapp Number</Form.Label>
-              <Form.Control
+        </div>
+      </div>
+      <div className="justify-content-center">
+        <div xs={10}>
+          <form onSubmit={handleSubmit}>
+            <div controlId="formBasicNumber">
+              <label className="textlabel">Whatsapp Number</label>
+              <input
                 type="text"
                 value={number}
                 placeholder="Enter whatsapp number"
                 onChange={(e) => setNumber(e.target.value)}
               />
-            </Form.Group>
+            </div>
 
-            <Form.Group controlId="formBasicText">
-              <Form.Label className="textlabel">Message</Form.Label>
-              <Form.Control
+            <div controlId="formBasicText">
+              <label className="textlabel">Message</label>
+              <input
                 as="textarea"
                 placeholder="Enter text for your link"
                 rows={3}
                 value={text}
                 onChange={(e) => setText(e.target.value)}
               />
-            </Form.Group>
-            <Button
+            </div>
+            <button
               style={{ height: 100, marginTop: 50 }}
               variant="primary"
               size="lg"
@@ -76,12 +76,10 @@ const FormElement = () => {
               className="animate__lightSpeedOutLeft"
             >
               Copy
-            </Button>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   );
 };
-
-export default FormElement;
