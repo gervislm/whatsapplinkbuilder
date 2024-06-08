@@ -33,7 +33,7 @@ export const FormComponent = () => {
   };
 
   return (
-    <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div className="flex min-h-full flex-col justify-center px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
         <Image src={logo} alt="logo" className="mx-auto h-20 w-auto" />
         <h1 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
@@ -47,13 +47,13 @@ export const FormComponent = () => {
           )}`}
         </p>
       </div>
-      <div className="w-full mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="w-full mx-auto max-w-md sm:px-6 lg:px-8">
         <div className="col-10">
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col justify-center items-center"
+            className="flex flex-col justify-center items-center w-full"
           >
-            <div className="w-full mt-4 flex flex-col justify-center">
+            <div className="w-full mt-4 flex flex-col justify-center items-center">
               <label
                 className="text-xl font-bold leading-9 tracking-tight text-white"
                 htmlFor="whatsapp-number"
@@ -62,7 +62,7 @@ export const FormComponent = () => {
               </label>
               <input
                 id="whatsapp-number"
-                className="mt-1 text-black input input-bordered w-full"
+                className="mt-1 text-black input input-bordered w-full max-w-md"
                 type="text"
                 value={number}
                 placeholder="Enter whatsapp number"
@@ -71,7 +71,7 @@ export const FormComponent = () => {
               />
             </div>
 
-            <div className="w-full mt-4 flex flex-col justify-center">
+            <div className="w-full mt-4 flex flex-col justify-center items-center">
               <label
                 className="text-xl font-bold leading-9 tracking-tight text-white"
                 htmlFor="message-text"
@@ -80,7 +80,7 @@ export const FormComponent = () => {
               </label>
               <textarea
                 id="message-text"
-                className="mt-1 text-black textarea textarea-bordered w-full"
+                className="mt-1 text-black textarea textarea-bordered w-full max-w-md resize-none"
                 placeholder="Enter text for your link"
                 rows={3}
                 value={text}
